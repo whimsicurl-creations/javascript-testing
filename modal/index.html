@@ -15,5 +15,31 @@
             <img src="img/wc-logo.png" alt="Whimsicurl Creations Logo">
         </div>
     </div>
+    <img src="img/dorothy-web-design.png" alt="Photography Web Design Comp" class="trigger" style="width: 200px;">
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="img/dorothy-ver2.png" alt="Full Website Design Comp">
+        </div>
+    </div>
+    <script>
+        var modal = document.querySelector('.modal');
+        var trigger = document.querySelector('.trigger');
+        var closeButton = document.querySelector('.close-button');
+
+        function toggleModal() {
+            modal.classList.toggle('show-modal');
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+
+        trigger.addEventListener('click', toggleModal);
+        closeButton.addEventListener('click', toggleModal);
+        window.addEventListener('click', windowOnClick);
+    </script>
 </body>
 </html>
