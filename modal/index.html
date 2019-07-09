@@ -22,6 +22,15 @@
             <img src="img/dorothy-ver2.png" alt="Full Website Design Comp">
         </div>
     </div>
+    <!-- CSS-Tricks Modal below -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="csst-modal" id="csst-modal">
+        <button class="close-button" id="close-button">Close</button>
+        <div class="modal-guts">
+            <img src="img/dorothy-ver2.png">
+        </div>
+    </div>
+    <button id="open-button" class="open-button">View Web Design Project</button>
     <script>
         var modal = document.querySelector('.modal');
         var trigger = document.querySelector('.trigger');
@@ -40,6 +49,21 @@
         trigger.addEventListener('click', toggleModal);
         closeButton.addEventListener('click', toggleModal);
         window.addEventListener('click', windowOnClick);
+
+        var csstModal = document.querySelector('#csst-modal');
+        var modalOverlay = document.querySelector('#modal-overlay');
+        var closeButton = document.querySelector('#close-button');
+        var openButton = document.querySelector('#open-button');
+
+        closeButton.addEventListener('click', function() {
+            csstModal.classList.toggle('closed');
+            modalOverlay.classList.toggle('closed');
+        });
+
+        openButton.addEventListener('click', function() {
+            csstModal.classList.toggle('closed');
+            modalOverlay.classList.toggle('closed');
+        });
     </script>
 </body>
 </html>
