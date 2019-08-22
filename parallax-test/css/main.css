@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    margin: 10px 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 35px;
+    border-radius: 15px;
+}
+#homepage {
+    background-image: url('../img/home-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homepage h1, #homepage h3 {
+    text-align: center;
+    line-height: 40px;
+}
+#services {
+    background-image: url('../img/services-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services h2, #services h3 {
+    text-align: center;
+    line-height: 40px;
+}
