@@ -13,19 +13,33 @@ p {
     padding: 35px;
     border-radius: 15px;
 }
-#homepage {
-    background-image: url('../img/home-bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.parallax-container {
+    display: block;
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.parallax-container div {
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+    height: 600px;
+    width: 100%;
+}
+#home-bg {
+    background-image: url('../img/home-bg.jpg');
+}
+.content {
+    position: relative;
+    margin-top: -350px;
+    margin-bottom: 350px;
 }
 #homepage h1, #homepage h3 {
     text-align: center;
     line-height: 40px;
+}
+#about, #services-content {
+    display: block;
+    background: white;
 }
 #services {
     background-image: url('../img/services-bg.jpg');
