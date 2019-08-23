@@ -40,3 +40,24 @@ div:nth-child(3) {
 div:nth-child(4) {
     background: aquamarine;
 }
+
+div:nth-child(5) {
+    background-image: url(img/contact-bg.jpg);
+    background-size: cover;
+}
+
+div:nth-child(6) {
+    background: orange;
+    height: 600px;
+}
+
+div:nth-child(7) {
+    height: 600px;
+    background-image: url(img/home-bg.jpg);
+    background-size: cover;
+    background-position-y: 0;
+}
+
+div:nth-child(8) {
+    background: yellowgreen;
+}
